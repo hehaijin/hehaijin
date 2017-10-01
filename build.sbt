@@ -1,4 +1,4 @@
-name := """hehaijin"""
+name := """portfolio"""
 organization := "com.example"
 
 version := "1.0-SNAPSHOT"

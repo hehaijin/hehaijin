@@ -1,0 +1,45 @@
+@()
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+      <link rel="javascript" href="assets/javascripts/bootstrap.min.js">
+</head>
+<body>
+  <div class='container'>
+  <h1>Word Path Finding<small> with A* algorithm</small></h1>
+  <p class='lead'> This web app calculates the shortest path it takes to transform one word into another! </p>
+  <label>Rules:</label>
+  <ul>
+  <li> Each step of transformation allows three types of operation: single character substitution or deletion or insertion.</p>
+  <li> The 2 words and each step between them must be in the dictionary.</p>
+  </ul>
+ <p> The <a href='https://github.com/dwyl/english-words'> dictionary </a> has <mark>370101</mark> entries.</p>
+  
+   <hr>
+    
+   
+      <label>From:</label>
+      <input   id="start" >
+   
+    
+      <label >To:</label>
+      <input  id="end" >
+   
+    
+      <button type="submit" id='submit' class="btn btn-primary">Submit</button>
+  
+   
+ <hr>
+  
+     <label>Results:</label>
+<br>
+<br>
+   <p id='result' class='lead'></p>
+  
+     
+</div>
+  
+  
+</body>
+</html>
