@@ -42,6 +42,10 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok(views.html.wordpath())
   }
 
+   def conway()=Action{
+  Ok(views.html.conway())
+  }
+  
 
 
 }

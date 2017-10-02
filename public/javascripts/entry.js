@@ -19,7 +19,7 @@ function getpath()
     return;
   }
   
- var url=window.location.href+'findPath/'+start+'/'+end; 
+ var url='http://'+window.location.host+'/findPath/'+start+'/'+end; 
  console.log(url);
   
 axios.get(url).then(

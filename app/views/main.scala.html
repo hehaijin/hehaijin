@@ -15,7 +15,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/chicken.png")">
        
         <link rel="stylesheet" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
         
@@ -24,7 +24,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
        
 
-
+        <style>
+        a.anchor {
+              display: block;
+              position: relative;
+              top: -150px;
+              visibility: hidden;
+          }
+        </style>
         
         
 
@@ -46,7 +53,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#aboutme">About Me</a></li>
             <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contactme">Contact Me</a></li>
           </ul>
            <ul class="nav navbar-nav navbar-right">
@@ -60,8 +67,8 @@
     
 
    
-      
-      <div class="container" id="aboutme">
+      <a class="anchor" id="aboutme"></a>
+      <div class="container" >
         <h1>About Me</h1>
         <p class="lead"> I am a Master's student for Computer Science at University of New Mexico. Graduating December 2017.   </p>
         
@@ -70,11 +77,12 @@
       </div>
       
       
-      
-       <div class="container" id="resume">
+       <a class="anchor" id="resume"></a>
+       <div class="container" >
         <h1>Resume</h1>
        
-      </div><div class="wrapper">
+      </div>
+      <div class="wrapper">
         <div class="sidebar-wrapper">
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" alt="" />
@@ -248,8 +256,14 @@
                     <span class="project-title"><a href="" target="_blank">Airline Query system</a></span> - 
                     <span class="project-tagline"> A database backed web application for querying airlines </span>
                 </div><!--//item-->
+                
+                  <div class="item">
+                    <span class="project-title"><a href="" target="_blank">3D Conway's Game of Life</a></span> - 
+                    <span class="project-tagline"> A JavaFx based 3D version of Conway's game of life </span>
+                </div><!--//item-->
+                
                    <div class="item">
-                    <span class="project-title"><a href="" target="_blank">WordPath</a></span> - 
+                    <span class="project-title"><a href="/wordpath" target="_blank">WordPath</a></span> - 
                     <span class="project-tagline"> A web application impletemed in play framework using Java and Scala, calculating the shortest path from 2 words.</span>
                 </div><!--//item-->
             
@@ -306,20 +320,48 @@
       
       
       
-      
-       <div class="container" id="portfolio">
+      <a class="anchor" id="portfolio"></a>
+       <div class="container" >
         <h1>My projects</h1>
-        <p class="lead">  here are my projrect in class and work</p>
+        <p class="lead"> More detailed description of some of my projects with demo.</p>
+      </div>
+      
+        <div class="container" >
+        <h3><i class="fa fa-link"></i><a href="/camino">Camino</a></h3>
+        <p> Camino is web application used internally by University of New Mexico, Health Science Center to manage clinical trials and research resources. </p>
+        <p> I participated in its 2.0 version implementation, where the whole system is migratedd from Salesforce to a React.js/Play Framework/Scala/MySQL solution.</p>
+
       </div>
 
+      
+       <div class="container" >
+        <h3><i class="fa fa-link"></i><a href="/camino">Airline Query System</a></h3>
+        <p> The final project for <cite>Database Management <cite>.</p>
+        <p> The database is from <a href='https://openflights.org/data.html'>Open Flights database</a> </p>
+        
+
+      </div>
+      
+        <div class="container" >
+        <h3><i class="fa fa-link"></i><a href="/conway">3D Conway's Game of Life</a></h3>
+        <p> This web app calculates the shortest path it takes to transform one word into another.
+          Each step of transformation allows three types of operation: single character substitution or deletion or insertion. and the 2 words and each step between them must be in the dictionary. </p>
+         <p> Check out the source code from <a href='https://github.com/hehaijin/3D-Conway-life'>GitHub</a> </p>
+      </div>
+      
+      
        <div class="container" >
         <h3><i class="fa fa-link"></i><a href="/wordpath">WordPath</a></h3>
         <p> This web app calculates the shortest path it takes to transform one word into another.
           Each step of transformation allows three types of operation: single character substitution or deletion or insertion. and the 2 words and each step between them must be in the dictionary. </p>
           <p>This is a Java programming assignment from CS351 <cite>Design of large programs</cite>, which was then transformed into a web application after I learned web programming.</p>
+          <p> Check out the source code from <a href='https://github.com/hehaijin/wordpath'>GitHub</a> </p>
       </div>
       
-       <div class="container" id="contactme">
+      
+      
+       <a class="anchor"id="contactme"></a>
+       <div class="container" >
         <h1>Contact Me</h1>
         <p class="lead"> Other links </p>
         <ul class="list-group">
@@ -334,8 +376,8 @@
       </div>
       
         </div>
-      
-       <div class="container" id="site">
+       <a class="anchor" id="site"></a> 
+       <div class="container anchor" >
         <h1>About this website</h1>
         <p class="lead"> The techniques used</p>
         <ul class="list-group">
