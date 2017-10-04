@@ -15,3 +15,5 @@ GET     /findPath/:name1/:name2         controllers.HomeController.findPath(name
 GET     /wordpath                       controllers.HomeController.wordpath
 
 GET     /conway                          controllers.HomeController.conway
+GET     /camino                          controllers.HomeController.camino
+GET     /zombie                         controllers.HomeController.zombie

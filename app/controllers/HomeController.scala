@@ -46,6 +46,12 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   Ok(views.html.conway())
   }
   
+def camino()=Action{
+  Ok(views.html.camino())
+  }
 
-
+  def zombie()=Action{
+  Ok(views.html.zombie())
+  }
+  
 }

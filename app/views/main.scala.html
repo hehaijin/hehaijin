@@ -1,9 +1,4 @@
-@*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
+
 @(title: String)(content: Html)
 
 <!DOCTYPE html>
@@ -25,6 +20,7 @@
        
 
         <style>
+        
         a.anchor {
               display: block;
               position: relative;
@@ -54,7 +50,7 @@
             <li class="active"><a href="#aboutme">About Me</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
+            <li><a href="#contactme">Other Links</a></li>
           </ul>
            <ul class="nav navbar-nav navbar-right">
            <li><a href="#site">About this website</a></li>
@@ -68,11 +64,17 @@
 
    
       <a class="anchor" id="aboutme"></a>
-      <div class="container" >
+      
+      <div class="container " >
         <h1>About Me</h1>
-        <p class="lead"> I am a Master's student for Computer Science at University of New Mexico. Graduating December 2017.   </p>
+        </div>
+        <div class="container projectwrapper">
+        <p > I used to be a Biology student interested in neuroscience. And one of the deepest question that concerns me is: how mind works. I studied structure of neurons, I was also taught its the mathematical abstraction: the perception and neural networks, under the impression it’s just a toy mathematical concept.    </p>
         
+        <p>Not anymore. Deep learning has changed everything. So, I changed to computer science, believing it can give an answer to the question.</p>
         
+        <p>I’ve been studying at University of New Mexico as a Master’s student of Computer Science from Feb 2016, and graduating this December. I’ve kept a good academic standing, while honing my programming skills through part-time industrial work in web development.  </p>
+
         <p> </p>
       </div>
       
@@ -87,7 +89,8 @@
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" alt="" />
                 <h1 class="name">Haijin He</h1>
-                <h3 class="tagline">Software programmer</h3>
+                <h3 class="tagline">Master student of Computer Science</h3>
+                <h3 class="tagline">Part-time web developer</h3>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
@@ -145,7 +148,7 @@
             <section class="section summary-section">
                 <h2 class="section-title"><i class="fa fa-user"></i>Objective</h2>
                 <div class="summary">
-                    <p>Full time position in Software Engineering.</p>
+                    <p>Computer Science new grad with good academic standing and solid programming skills, seeking a full time software engineer position to build software with impact.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
@@ -276,37 +279,50 @@
                     <p></p>
                 </div><!--//intro-->
                 <div class="item">
-                    <span class="project-title"><a href="#hook">Data Mining Techniques</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Data Mining Techniques</span> <span class="project-tagline"></span>
                     
                 </div><!--//item-->
                 <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Machine Learning</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Machine Learning</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                  <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Advanced Machine Learning</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Advanced Machine Learning</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                 
                   <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Design of large programs(Java)</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Design of large programs(Java)</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                  <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Database Management</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Database Management</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                  <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Data Structure and Algorithms</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Data Structure and Algorithms</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                  <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Digital Image Processing</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Digital Image Processing</span> <span class="project-tagline"></span>
                 </div><!--//item-->
                  <div class="item">
                    
-                    <span class="project-title"><a href="#hook">Reverse Engineering</a></span> <span class="project-tagline"></span>
+                    <span class="project-title">Reverse Engineering</span> <span class="project-tagline"></span>
+                </div><!--//item-->
+                 <div class="item">
+                   
+                    <span class="project-title">Software Testing </span> <span class="project-tagline"></span>
+                </div><!--//item-->
+                
+                 <div class="item">
+                   
+                    <span class="project-title">Geometric and Probabilistic Methods in Computer Science</span> <span class="project-tagline"></span>
+                </div><!--//item-->
+                 <div class="item">
+                   
+                    <span class="project-title">Computer Network </span> <span class="project-tagline"></span>
                 </div><!--//item-->
             </section>
             
@@ -321,49 +337,82 @@
       
       
       <a class="anchor" id="portfolio"></a>
+      
+       
        <div class="container" >
         <h1>My projects</h1>
         <p class="lead"> More detailed description of some of my projects with demo.</p>
       </div>
       
-        <div class="container" >
+    
+        <div class="container projectwrapper" >
         <h3><i class="fa fa-link"></i><a href="/camino">Camino</a></h3>
         <p> Camino is web application used internally by University of New Mexico, Health Science Center to manage clinical trials and research resources. </p>
         <p> I participated in its 2.0 version implementation, where the whole system is migratedd from Salesforce to a React.js/Play Framework/Scala/MySQL solution.</p>
 
       </div>
-
+     
+      <br>
+      <br>
       
-       <div class="container" >
-        <h3><i class="fa fa-link"></i><a href="/camino">Airline Query System</a></h3>
+       <div class="container projectwrapper" >
+        <h3><i class="fa fa-link"></i><a href="https://github.com/hehaijin/ZombieHouse">ZombieHouse</a></h3>
+        <p></p>
+        <p> A JavaFx based 3D game. Player is trapped in a dungeon. His mission is to find the exit, and keep him self from being killed by zombies. </p>
+        <p> The source code can be found at <a href='https://github.com/hehaijin/ZombieHouse'>GitHub</a> </p>
+
+      </div>
+      <br>
+      <br>
+      
+       <div class="container projectwrapper" >
+        <h3><i class="fa fa-link"></i><a href="http://cs.unm.edu/~haijin/project/test.php">Airline Query System</a></h3>
         <p> The final project for <cite>Database Management <cite>.</p>
         <p> The database is from <a href='https://openflights.org/data.html'>Open Flights database</a> </p>
         
 
       </div>
-      
-        <div class="container" >
+      <br>
+      <br>
+        <div class="container projectwrapper" >
         <h3><i class="fa fa-link"></i><a href="/conway">3D Conway's Game of Life</a></h3>
         <p> This web app calculates the shortest path it takes to transform one word into another.
           Each step of transformation allows three types of operation: single character substitution or deletion or insertion. and the 2 words and each step between them must be in the dictionary. </p>
          <p> Check out the source code from <a href='https://github.com/hehaijin/3D-Conway-life'>GitHub</a> </p>
       </div>
       
-      
-       <div class="container" >
+      <br>
+      <br>
+       <div class="container projectwrapper" >
         <h3><i class="fa fa-link"></i><a href="/wordpath">WordPath</a></h3>
         <p> This web app calculates the shortest path it takes to transform one word into another.
           Each step of transformation allows three types of operation: single character substitution or deletion or insertion. and the 2 words and each step between them must be in the dictionary. </p>
           <p>This is a Java programming assignment from CS351 <cite>Design of large programs</cite>, which was then transformed into a web application after I learned web programming.</p>
           <p> Check out the source code from <a href='https://github.com/hehaijin/wordpath'>GitHub</a> </p>
       </div>
-      
-      
-      
+      <br>
+      <br>
+        <div class="container projectwrapper" >
+        <h3><i class="fa fa-link"></i><a href="/wordpath">Machine Learning Algorithms</a></h3>
+        <p> During clases of <strong>Data Mining Techniques, Machine Learning, Advanced Machine Learning</strong>, I've implemented from scratch several algorithm with Python.</p>
+         <ul class="list-group">
+            <li class="list-group-item"><a href="https://github.com/hehaijin/DecisionTree">Decision Tree Algorith: used to predict Intron/Exon feature for nucleitdie sequences</a></li>
+            <li class="list-group-item"><a href="https://github.com/hehaijin/perceptron-algorithm">Perceptron Algorithm: to linearly classify data points.</a></li>
+            <li class="list-group-item"><a href="https://github.com/hehaijin/EM-algorithm-for-ML">Expectation Maximization</a></li>
+            
+          </ul>
+          
+      </div>
+        <br>
+      <br>
+  
        <a class="anchor"id="contactme"></a>
-       <div class="container" >
-        <h1>Contact Me</h1>
-        <p class="lead"> Other links </p>
+       <div class="container">
+        <h1>Other Links</h1>
+       </div>
+       <div class="container projectwrapper" >
+       
+      <br>
         <ul class="list-group">
             <li class="list-group-item"><a href="https://www.linkedin.com/in/haijin-he-0b9a9225/">Linkedin</a></li>
             <li class="list-group-item"><a href="https://github.com/hehaijin">Github</a></li>
@@ -375,17 +424,23 @@
         
       </div>
       
-        </div>
+         <br>
+      <br>
+      
        <a class="anchor" id="site"></a> 
-       <div class="container anchor" >
+       <div class="container">
         <h1>About this website</h1>
-        <p class="lead"> The techniques used</p>
+        </div>
+       
+       
+       <div class="container projectwrapper" >
+       <br>
         <ul class="list-group">
-            <li class="list-group-item">Front End: Bootstrap, Font-Awsome</li>
+            <li class="list-group-item">Front End: Bootstrap, Font-Awsome, JavaScript</li>
             <li class="list-group-item">Back End: Scala, Java, Play Framework</li>
-            <li class="list-group-item">Html Tempaltes: </a>
-            <li class="list-group-item">Deployment to Amazon web service with BoxFuse</a>
-            <li class="list-group-item">The source code of the website can be found at: </a>
+            <li class="list-group-item">Html Tempaltes: <a href='https://github.com/xriley/Orbit-Theme'> orbit theme</a>
+            <li class="list-group-item">Deployment to Amazon web service with BoxFuse</li>
+            <li class="list-group-item">The source code of the website can be found at: <a href="https://github.com/hehaijin/hehaijin">Github</a> </li>
             
           </li>
             
@@ -396,6 +451,7 @@
       </div>
       
  
+
     
     
         @* And here's where we render the `Html` object containing
