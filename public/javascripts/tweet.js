@@ -1,6 +1,6 @@
     
 	var topic= document.getElementById("topic").innerHTML
-	var url="ws://localhost:9000/tweets/"+topic;
+	var url="ws://"+  window.location.host+"/tweets/"+topic;
 	console.log(url)
     var tweetSocket=new WebSocket(url);
     tweetSocket.onmessage= function(event){
