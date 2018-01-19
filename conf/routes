@@ -17,3 +17,12 @@ GET     /wordpath                       controllers.HomeController.wordpath
 GET     /conway                          controllers.HomeController.conway
 GET     /camino                          controllers.HomeController.camino
 GET     /zombie                         controllers.HomeController.zombie
+GET     /twitteranalysis                controllers.Application.index
+
+#the websocket 
+GET     /tweets/:topic                  controllers.Application.tweets(topic)   
+ 
+#get any topic by this route entry
+GET     /stream/:topic                  controllers.Application.stream(topic)   
+
+

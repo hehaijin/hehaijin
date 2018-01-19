@@ -53,5 +53,9 @@ def camino()=Action{
   def zombie()=Action{
   Ok(views.html.zombie())
   }
-  
+
+  def twitteranalysis() = Action {
+  Ok("ok")
+  }
+   
 }
